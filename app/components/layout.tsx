@@ -5,7 +5,7 @@ import { Box, GlobalStyles } from "@mui/joy";
 import { Fragment, Suspense } from "react";
 import { Outlet } from "react-router-dom";
 import { Logo } from "./logo";
-import { Sidebar } from "./sidebar";
+// import { Sidebar } from "./sidebar";
 import { Toolbar } from "./toolbar";
 
 /**
@@ -26,8 +26,9 @@ export function MainLayout(): JSX.Element {
       />
       <Toolbar sx={{ gridArea: "1 / 2 / 2 / -1" }} />
 
-      <Sidebar sx={{ gridArea: "1 / 1 / -1 / 2" }} />
-      <Logo sx={{ gridArea: "1 / 1 / 2 / 2", zIndex: 100 }} />
+      {/* TODO - PC version visible */}
+      {/* <Sidebar sx={{ gridArea: "1 / 1 / -1 / 2" }} /> */}
+      {/* <Logo sx={{ gridArea: "1 / 1 / 2 / 2", zIndex: 100 }} /> */}
 
       <Box sx={{ gridArea: "1 / 2 / -1 / -1", pt: "60px" }}>
         <Suspense>

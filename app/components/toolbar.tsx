@@ -1,6 +1,3 @@
-/* SPDX-FileCopyrightText: 2014-present Kriasoft */
-/* SPDX-License-Identifier: MIT */
-
 import { ExpandMoreRounded, NotificationsRounded } from "@mui/icons-material";
 import { Box, BoxProps, Button, IconButton } from "@mui/joy";
 import { Fragment, Suspense } from "react";
@@ -20,7 +17,7 @@ export function Toolbar(props: ToolbarProps): JSX.Element {
         borderColor: "divider",
         display: "flex",
         gap: 1,
-        px: 2,
+        p: 1,
         ...sx,
       }}
       component="header"
